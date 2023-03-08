@@ -21,5 +21,6 @@ const res = document.getElementById('res');
 
 function calculaSalarioIdeal(){
     var sal = aluguel.valueAsNumber + agua.valueAsNumber + energia.valueAsNumber + educacao.valueAsNumber + internet.valueAsNumber + alimentacao.valueAsNumber + lixo.valueAsNumber + iptu.valueAsNumber + transporte.valueAsNumber + lazer.valueAsNumber + saude.valueAsNumber + impostos.valueAsNumber + cuidados.valueAsNumber + outros.valueAsNumber;
+    sal += sal*1.30; 
     res.textContent += ` R$ ${sal}`;
 }
