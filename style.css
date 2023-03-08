@@ -1,0 +1,32 @@
+body{
+    background: rgba(0, 0, 255, 0.534);
+}
+label{
+    display: block;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+}
+fieldset{
+    margin-bottom: 10px;
+}
+#res{
+    padding: 10px;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+}
+#calcula{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+form{
+    background-color: #f1f1f1;
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}

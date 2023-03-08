@@ -1,0 +1,37 @@
+<!--A aplicação deve ter uma interface simples e amigável para o usuário, permitindo a entrada de informações como, despesas básicas mensais, gastos com alimentação, transporte e lazer, além de outros fatores relevantes. A aplicação deve utilizar algoritmos para calcular o salário base necessário para viver uma vida de renda média no Brasil, considerando as especificidades da região escolhida e as informações inseridas pelo usuário.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Salário Base para viver em Araguaína</title>
+</head>
+<body>
+    <form action="">
+        <h1>Cálculo do salário médio</h1>
+        <fieldset><legend>Despesas fixas</legend>
+            <label for="">Aluguel: <input type="number" id="aluguel"></label>
+            <label for="">Água: <input type="number" id="agua"></label>
+            <label for="">Energia: <input type="number" id="energia"></label>
+            <label for="">Educação: <input type="number" id="educacao"></label>
+            <label for="">Internet: <input type="number" id="internet"></label>
+            <label for="">Taxa de coleta de lixo: <input type="number" id="lixo"></label>
+            <label for="">IPTU: <input type="number" id="iptu"></label>
+        </fieldset>
+        <fieldset><legend>Despesas variáveis</legend>
+            <label for="">Alimentação: <input type="number" id="alimentacao"></label>
+            <label for="">Transporte: <input type="number" id="transporte"></label>
+            <label for="">Lazer: <input type="number" id="lazer"></label>
+            <label for="">Saúde: <input type="number" id="saude"></label>
+            <label for="">Impostos: <input type="number" id="impostos"></label>
+            <label for="">Cuidados Pessoais: <input type="number" id="cuidados"></label>
+            <label for="">Outros: <input type="number" id="outros"></label>
+        </fieldset>
+        <button id="calcula" type="button">Calcular</button>
+        <div id="res">Para viver em Araguaína é necessário ter um salário médio de:</div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
