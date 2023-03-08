@@ -17,10 +17,19 @@ var outros = document.getElementById('outros');
 const btn = document.getElementById('calcula');
 btn.addEventListener('click', calculaSalarioIdeal);
 
+var IsencaoIPTU = document.querySelector('input[name="isencaoIPTU"]:checked');
+
 const res = document.getElementById('res');
 
 function calculaSalarioIdeal(){
-    var sal = aluguel.valueAsNumber + agua.valueAsNumber + energia.valueAsNumber + educacao.valueAsNumber + internet.valueAsNumber + alimentacao.valueAsNumber + lixo.valueAsNumber + iptu.valueAsNumber + transporte.valueAsNumber + lazer.valueAsNumber + saude.valueAsNumber + impostos.valueAsNumber + cuidados.valueAsNumber + outros.valueAsNumber;
-    sal += sal*1.30; 
-    res.textContent += ` R$ ${sal}`;
+    var sal = aluguel.valueAsNumber + agua.valueAsNumber + energia.valueAsNumber + educacao.valueAsNumber + internet.valueAsNumber + alimentacao.valueAsNumber + lixo.valueAsNumber + transporte.valueAsNumber + lazer.valueAsNumber + saude.valueAsNumber + impostos.valueAsNumber + cuidados.valueAsNumber + outros.valueAsNumber;
+    if (IsencaoIPTU == 'nao'){
+        sal += iptu.valueAsNumber
+    }
+    sal += sal*0.30;
+    if (isNaN(sal)){
+        alert('Preencha todos os campos')
+    }else{
+        res.textContent = `Para viver em Araguaína é necessário ter um salário médio de: R$ ${sal.toFixed(2)}`;
+    }
 }

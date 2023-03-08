@@ -1,6 +1,12 @@
 body{
     background: rgba(0, 0, 255, 0.534);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.escondido{
+    display: none;
+}
+
 label{
     display: block;
     margin: 10px;
